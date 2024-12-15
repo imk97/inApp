@@ -12,7 +12,7 @@ public class MyWebViewClient extends WebViewClient {
 
     @Override
     public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
-        if (this.url.name.equals(request.getUrl().getHost())) {
+        if (this.url.getName().equals(request.getUrl().getHost())) {
             // This is your website, so don't override. Let your WebView load the
             // page.
             return false;

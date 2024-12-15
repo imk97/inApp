@@ -2,9 +2,13 @@ package com.example.in_app.global;
 
 public class URL {
 
-    public String name;
+    private String name;
 
     public URL() {
-        this.name = "https://www.google.com/";
+        this.name = "google.com.my";
+    }
+
+    public String getName() {
+        return this.name;
     }
 }

@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         webSettings.setJavaScriptEnabled(true);
         myWebView.addJavascriptInterface(webAppInterface, "Android");
         myWebView.setWebViewClient(new MyWebViewClient());
-        myWebView.loadUrl(this.url.name);
+        myWebView.loadUrl(this.url.getName());
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
